@@ -54,8 +54,10 @@ for fileName in files:
                 fa.write("<TERM>"+key+"</TERM>"+"<NEWID>"+str(Dictionaryss[key])+"</NEWID>")
                 '''
             fileNameCreate = "block" + str(blockNumber) + ".json"
-            fa = open(fileNameCreate, "a")
-            json.dump(Dictionaryss, fa)
+            #fa = open(fileNameCreate, "a")
+            with open(fileNameCreate, 'w') as fp:
+                json.dump(Dictionaryss, fp)
+            # json.dump(Dictionaryss, fa)
             Dictionaryss = {}
             blockNumber = blockNumber + 1
 
