@@ -1,7 +1,7 @@
 import os
 class FileRetrival:
     def retrivalSMGFile(self, file):
-        for dirpath, dirnames, filenames in os.walk('.'):
+        for dirpath, dirnames, filenames in os.walk('./reuters21578'):
             for f in filenames:
                 if '.sgm' in f:
                     file.append(f)
