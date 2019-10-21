@@ -38,6 +38,7 @@ class Merge:
     def run(self):
         int = 0
         block = 0
+        invertblock = 0
         while True:
             #temp= []
             tempHeader = []
@@ -54,7 +55,12 @@ class Merge:
                 #print(tempHeader)
                 #print(tempPosting)
             int += 1
-
+            if int % 24999 == 0:
+                fp = open("invert" +str(invertblock)+ ".txt", 'a')
+                for key in self.invertDictionary:
+                    fp.write(str(key) +":::"+ str(self.invertDictionary[key]) + "\n")
+                self.invertDictionary = {}
+                invertblock +=1
             minKey = min(tempHeader);
             if minKey == "zzzzzzzzzzzzzz----":
                 break
@@ -92,12 +98,30 @@ class Merge:
                 block += 1
         #print(self.stopARR)
         #print(self.invertDictionary)
-        fp = open("inverst.txt", 'a')
-        for key in self.invertDictionary:
-            fp.write(str(key)+str(self.invertDictionary[key])+"\n")
+        index = 0
+        if(self.invertDictionary):
+            fp = open("invert" + str(invertblock) + ".txt", 'a')
+            for key in self.invertDictionary:
+                fp.write(str(key) + ":::"+str(self.invertDictionary[key]) + "\n")
+            self.invertDictionary = {}
+
 
     '''
       
+      if(dictionary):
+    dictionary.pop('\u0003', None)
+    fileNameCreate = "./disk/block"+ str(blockNumber) +".txt"
+    fileLists.append(fileNameCreate)
+    with open(fileNameCreate, 'a') as fp:
+        #json.dump(dictionary, fp, sort_keys=True)
+        keyArr = sorted(dictionary)
+        #stopArr.append(max(keyArr))
+        #stopArr.append(str(max(keyArr) + ":" + str(dictionary[max(keyArr)])+"\n"))
+        for key in keyArr:
+            fp.write(str(key) + ":::" + str(dictionary[key])+"\n")
+        fp.write("zzzzzzzzzzzzzz----:::[]")
+    dictionary = {}
+    print(fileNameCreate)
             self.updateIndexBuffer(tempHeader)
             self.updateALL(tempPosting)
             self.update_dictionary()

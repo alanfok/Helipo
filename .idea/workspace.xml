@@ -4,51 +4,96 @@
     <list default="true" id="1929106b-76cc-4a03-b988-5ad3998cd674" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Merge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block12.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block15.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block17.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block18.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block19.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block20.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block21.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block22.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block23.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block24.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block25.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block26.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block27.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block28.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block29.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block30.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block31.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block32.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block33.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block34.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block35.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block36.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block37.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block38.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block39.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block40.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block41.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block42.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block43.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk/block9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block33.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block37.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block39.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block41.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block43.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk/block9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inverst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/all-exchanges-strings.lc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/all-orgs-strings.lc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/all-people-strings.lc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/all-places-strings.lc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/all-topics-strings.lc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/cat-descriptions_120396.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/feldman-cia-worldfactbook-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/lewis.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-000.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-001.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-002.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-003.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-004.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-005.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-006.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-007.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-008.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-009.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-010.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-011.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-012.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-013.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-014.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-015.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-016.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-017.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-018.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-019.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-020.sgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reuters21578/reut2-021.sgm" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-              <folding>
-                <element signature="e#91#120#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -76,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Merge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="68">
+              <caret line="78" column="101" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="101" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -86,37 +128,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/merged.json">
+        <entry file="file://$PROJECT_DIR$/invert2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret column="29377" selection-start-column="29377" selection-end-column="29377" />
+            <state relative-caret-position="343">
+              <caret line="549" column="1965" selection-start-line="549" selection-start-column="1965" selection-end-line="549" selection-end-column="1965" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reuters21578/reut2-020.sgm">
+        <entry file="file://$PROJECT_DIR$/invert1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+            <state relative-caret-position="121">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FileRetrival.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inverst.txt">
+        <entry file="file://$PROJECT_DIR$/Query.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92670">
-              <caret line="4584" column="1909" selection-start-line="4584" selection-start-column="1909" selection-end-line="4584" selection-end-column="1909" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reuters21578/reut2-000.sgm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="6175" column="37" selection-start-line="6175" selection-start-column="37" selection-end-line="6175" selection-end-column="37" />
+            <state relative-caret-position="270">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -124,6 +166,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/all-exchanges-strings.lc.txt">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reuters21578/lewis.dtd">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reuters21578/reut2-001.sgm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="18471" column="31" selection-start-line="18471" selection-start-column="23" selection-end-line="18471" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lewis.dtd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -137,8 +202,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>19614</find>
-      <find>term</find>
       <find>17-year</find>
       <find>lineCounting</find>
       <find>updataPostingList</find>
@@ -167,6 +230,8 @@
       <find>ee</find>
       <find>reconsidered</find>
       <find>effect</find>
+      <find>during</find>
+      <find>maxFile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,14 +251,15 @@
         <option value="$PROJECT_DIR$/disk/block0.txt" />
         <option value="$PROJECT_DIR$/reuters21578/fff.py" />
         <option value="$PROJECT_DIR$/inverst.txt" />
-        <option value="$PROJECT_DIR$/Merge.py" />
         <option value="$PROJECT_DIR$/program.py" />
+        <option value="$PROJECT_DIR$/Merge.py" />
+        <option value="$PROJECT_DIR$/Query.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,11 +274,6 @@
             <path>
               <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="disk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
@@ -241,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.program">
+  <component name="RunManager" selected="Python.Query">
     <configuration name="Merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Project1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -255,6 +316,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Merge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Query" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Project1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Query.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,12 +388,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.program" />
       <item itemvalue="Python.Merge" />
       <item itemvalue="Python.fff" />
+      <item itemvalue="Python.program" />
+      <item itemvalue="Python.Query" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Query" />
         <item itemvalue="Python.program" />
         <item itemvalue="Python.Merge" />
         <item itemvalue="Python.fff" />
@@ -341,10 +425,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15011914" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15007898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" show_stripe_button="false" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -353,88 +437,28 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32970297" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32970297" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.095313326" side_tool="true" weight="0.14059407" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.095313326" side_tool="true" weight="0.14059407" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32970297" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.2881188" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.9046867" visible="true" weight="0.28767124" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.9046867" visible="true" weight="0.28712872" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.106371775" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" show_stripe_button="false" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49921012" weight="0.32673267" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9046867" visible="true" weight="0.14059407" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32970297" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.095313326" side_tool="true" visible="true" weight="0.14059407" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.2881188" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Merge.py</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/invertDic.0.json" />
-    <entry file="file://$PROJECT_DIR$/log.txt" />
-    <entry file="file://$PROJECT_DIR$/invertDic.json" />
-    <entry file="file://$PROJECT_DIR$/disk/block7.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="870">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disk/block31.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-365174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disk/block14.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="574">
-          <caret line="26978" column="73" selection-start-line="26978" selection-start-column="73" selection-end-line="26978" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lewis.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disk/block8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6674">
-          <caret line="107" column="4" selection-start-line="104" selection-start-column="8" selection-end-line="107" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="601">
-          <caret line="26122" column="18" selection-start-line="26122" selection-start-column="16" selection-end-line="26122" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/disk/block28.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9">
@@ -468,21 +492,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log24.txt" />
     <entry file="file://$PROJECT_DIR$/mergedBlock1.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log6.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -512,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reuters21578/reut2-001.sgm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="18448" column="23" selection-start-line="18448" selection-start-column="23" selection-end-line="18448" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reuters21578/reut2-005.sgm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23002" />
@@ -528,13 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="1314" column="17" selection-start-line="1314" selection-end-line="1314" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log13.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="4192" column="37" selection-start-line="4192" selection-start-column="37" selection-end-line="4192" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -615,13 +613,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/merge.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret column="3369" selection-start-column="3365" selection-end-column="3369" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/merge.txt" />
     <entry file="file://$PROJECT_DIR$/disk/block23.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-78">
@@ -639,33 +631,6 @@
         <state relative-caret-position="-435935" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/all-exchanges-strings.lc.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/merged.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret column="29377" selection-start-column="29377" selection-end-column="29377" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Merge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reuters21578/reut2-000.sgm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="6175" column="37" selection-start-line="6175" selection-start-column="37" selection-end-line="6175" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-223">
@@ -678,32 +643,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program.py">
+    <entry file="file://$PROJECT_DIR$/log3.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="e#91#120#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1110">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/log13.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="4192" column="37" selection-start-line="4192" selection-start-column="37" selection-end-line="4192" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inverst.txt" />
     <entry file="file://$PROJECT_DIR$/reuters21578/reut2-020.sgm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
+        <state relative-caret-position="2325">
           <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inverst.txt">
+    <entry file="file://$PROJECT_DIR$/reuters21578/reut2-000.sgm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92670">
-          <caret line="4584" column="1909" selection-start-line="4584" selection-start-column="1909" selection-end-line="4584" selection-end-column="1909" />
+        <state relative-caret-position="92625">
+          <caret line="6175" column="37" selection-start-line="6175" selection-start-column="37" selection-end-line="6175" selection-end-column="37" />
         </state>
       </provider>
-      <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="281">
-          <caret line="4894" column="20485" lean-forward="true" selection-start-line="4894" selection-start-column="20485" selection-end-line="4894" selection-end-column="20485" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invert.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merged.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29377" selection-start-column="29377" selection-end-column="29377" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invert0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2851">
+          <caret line="109" column="10" selection-start-line="109" selection-end-line="109" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reuters21578/reut2-001.sgm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="18471" column="31" selection-start-line="18471" selection-start-column="23" selection-end-line="18471" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lewis.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileRetrival.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-exchanges-strings.lc.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reuters21578/lewis.dtd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="78" column="101" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invert2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="549" column="1965" selection-start-line="549" selection-start-column="1965" selection-end-line="549" selection-end-column="1965" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invert1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
