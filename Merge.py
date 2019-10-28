@@ -13,10 +13,10 @@ class Merge:
     term = ""
     postingList =[]
     invertDictionary = {}
+    invertDictionaryCounter = {}
     stopARR = []
     docLength = []
     max = 0
-    theLastword =""
 
 
     def mergeInit(self, file ,stopARR,max):
@@ -39,6 +39,7 @@ class Merge:
         int = 0
         block = 0
         invertblock = 0
+        term = 0
         while True:
             #temp= []
             tempHeader = []
@@ -55,7 +56,7 @@ class Merge:
                 #print(tempHeader)
                 #print(tempPosting)
             int += 1
-            if int % 24999 == 0:
+            if int % 25000 == 0:
                 fp = open("invert" +str(invertblock)+ ".txt", 'a')
                 for key in self.invertDictionary:
                     fp.write(str(key) +":::"+ str(self.invertDictionary[key]) + "\n")
@@ -66,8 +67,6 @@ class Merge:
                 break
             else:
                 self.term = minKey
-            #print(tempHeader)
-            #print(tempPosting)
             self.indexWillUpdate = [i for i, n in enumerate(tempHeader) if n == minKey]
             for index in self.indexWillUpdate:
                 tmp = tempPosting[index]
@@ -75,36 +74,36 @@ class Merge:
                 if self.term in self.invertDictionary:
                     for num in tmp.translate({ord(i): None for i in ",[\']"}).split():
                         self.invertDictionary[self.term].append(num)
+                        self.invertDictionaryCounter[self.term].append(num)
                 else:
                     self.invertDictionary[self.term] = tmp.translate({ord(i): None for i in ",[\']"}).split()
+                    self.invertDictionaryCounter[self.term] = tmp.translate({ord(i): None for i in ",[\']"}).split()
 
                 self.lineCounting[index] = self.lineCounting[index] + 1
                 if self.lineCounting[index] < self.stopARR[index]:
                     line = linecache.getline(self.file[index], self.lineCounting[index]+1)
                     #print(line)
                     self.fullBufferReader[index] = line
-                '''
-                self.lineCounting[index] = self.lineCounting[index] + 1
-                fo = open(self.file[index], "r")
-                for i, line in enumerate(fo):
-                    if i == self.lineCounting[index] and self.lineCounting[index] < self.stopARR[index]:
-                        self.fullBufferReader[index] = line
-'''
-            #print(self.fullBufferReader)
             print(int)
             fp = open("log"+str(block)+".txt", 'a')
             fp.write(str(self.fullBufferReader)+"\n")
             if int % 4999 == 0:
                 block += 1
-        #print(self.stopARR)
-        #print(self.invertDictionary)
-        index = 0
+
+
         if(self.invertDictionary):
             fp = open("invert" + str(invertblock) + ".txt", 'a')
             for key in self.invertDictionary:
                 fp.write(str(key) + ":::"+str(self.invertDictionary[key]) + "\n")
             self.invertDictionary = {}
 
+        term = 0
+        leng = 0
+        for key in self.invertDictionaryCounter:
+            term = term +1
+            leng = leng + len(self.invertDictionaryCounter[key])
+
+        print("term has " + str(term) +" and " +str(leng))
 
     '''
       
@@ -155,75 +154,6 @@ class Merge:
             int += 1
         '''
 
-
-    def updateIndexBuffer(self, lst):
-        self.indexWillUpdate.clear()
-        self.term = min(lst)
-        index = 0
-        for word in lst:
-            if str(word) == str(min(lst)):
-                self.indexWillUpdate.append(index)
-            index += 1
-
-    def updateALL(self, posting):
-        for num in self.indexWillUpdate:
-            tmp = self.lineCounting[num]
-            tmp += 1
-            self.lineCounting[num] = tmp
-            tmp = posting[num].translate({ord(i): None for i in "[']"})
-            tmp2 = tmp.split();
-            for num2 in tmp2:
-                self.postingList.append(num2)
-            fo = open(self.file[num], "r")
-            #print(fo)
-            i = 0
-            for line in fo:
-                if i == self.lineCounting[num] and i <self.stopARR[num]:
-                   # print("line" + line)
-                    #print("before")
-                    #print(self.fullBufferReader)
-                    self.fullBufferReader[num] = line
-                    #print("after")
-                    #print(self.fullBufferReader)
-                    break
-                else:
-                        i += 1
-
-    def updataLineCounter(self):
-        for num in self.indexWillUpdate:
-            tmp = self.lineCounting[num]
-            tmp += 1
-            self.lineCounting[num] = tmp
-
-    def updataPostingList(self, lst):
-        for num in self.indexWillUpdate:
-            tmp = lst[num].translate({ord(i): None for i in "[']"})
-            tmp2 = tmp.split();
-            for num2 in tmp2:
-                self.postingList.append(num2)
-
-    def upadateFullfullBufferReader(self):
-        for num in self.indexWillUpdate:
-            fo = open(self.file[num], "r")
-            print(fo)
-            i = 0
-            for line in fo:
-                if i == self.lineCounting[num]:
-                    print("before")
-                    print(self.fullBufferReader)
-                    self.fullBufferReader[num] = line
-                    print("after")
-                    print(self.fullBufferReader)
-                    break
-                else:
-                    i += 1
-
-    def update_dictionary(self):
-        if self.term in self.invertDictionary:
-                for post in self.postingList:
-                    self.invertDictionary[self.term].append(post)
-        else:
-            self.invertDictionary[self.term] = self.postingList
 
     '''
 i = 3
