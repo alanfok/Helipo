@@ -6,10 +6,13 @@ from Dictionary import Dictionary
 from Merge import Merge
 
 
-
+import math
 import nltk
 import string
 import os
+
+#k 1.5
+#b 0.5
 
 stopWordIn30 = [
     'i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your',
@@ -43,11 +46,55 @@ stopArr = []
 fr.retrivalSMGFile(files)
 
 index = 0
-max =0
+max = 0
+weight = 0
 blockNumber = 0
 articleCount = 0
 dictionary = {}
+tf_dictionary = {}
+idf = {}
+df = {}
+N = 0
+ld_dictionary = {}
 
+documentLen = {}
+
+df2 = {}
+length_document = 0
+average_length_document = 0
+Bm25ScoreDictionary = {}
+
+average_length_document2 = 0
+length_document2 = 0
+k1 = 0.5
+b = 0.5
+'''
+#first loop to collect the df
+for fileName in sorted(files):
+    f = open("reuters21578/" + fileName, "r", encoding="ISO-8859-1")
+    data = f.read()
+    soup = BeautifulSoup(data)
+    contents = soup.findAll("reuters")
+    for content in contents:
+        newid = (content['newid'])
+        N += 1
+        if str(content.body) != "None":
+            temp = str((content.body.text).translate({ord(i): None for i in '\x7f'}))
+            #tokens = nltk.word_tokenize((temp).lower().translate({ord(i): None for i in string.punctuation}))
+            tokens = nltk.word_tokenize((temp).translate({ord(i): None for i in string.punctuation}))
+            length_document = length_document + len(tokens)
+            tokens = set(tokens)
+            #collect the df in dictionary
+            for token in tokens:
+                if token in df:
+                    df[token] = df[token] + 1
+                else:
+                    df[token] = 1
+average_length_document = length_document / N
+'''
+
+#2nd loop
+#tokenize and creat
 for fileName in sorted(files):
     f = open("reuters21578/"+fileName, "r", encoding="ISO-8859-1")
     data = f.read()
@@ -55,7 +102,7 @@ for fileName in sorted(files):
     contents = soup.findAll("reuters")
     for content in contents:
         newid = (content['newid'])
-
+        '''
         if str(content.title) != "None":
             temp = str((content.title.text).translate({ord(i): None for i in '\x7f'}))
             #tileTokens = nltk.word_tokenize((temp).lower().translate({ord(i): None for i in string.punctuation}))
@@ -69,21 +116,51 @@ for fileName in sorted(files):
                         dictionary[tileToken].append(newid)
                     else:
                         dictionary[tileToken] = [newid]
-
+        '''
         if str(content.body) != "None":
             temp = str((content.body.text).translate({ord(i): None for i in '\x7f'}))
             #tokens = nltk.word_tokenize((temp).lower().translate({ord(i): None for i in string.punctuation}))
             tokens = nltk.word_tokenize((temp).translate({ord(i): None for i in string.punctuation}))
             #tokens = set(tokens) - set(stopWordIn30)
+
+            ld = len(tokens)
+            ld_dictionary[newid] = ld
+            temptoken = tokens
+            length_document2 = length_document2 + ld
             #tokens = set(tokens) - set(stopWordIn150)
             tokens = set(tokens)
             for token in tokens:
+                tf = temptoken.count(token)
                 if not token.isdigit():
-                    if token in dictionary:
-                        if newid not in dictionary[token]:
-                            dictionary[token].append(newid)
+                    #n is df
+                    #n = df[token]
+                    #print(token + str(n))
+                    if newid in tf_dictionary:
+                        if token in tf_dictionary[newid]:
+                            tf_dictionary[newid][token] += tf
+                        else:
+                            tf_dictionary[newid][token] = tf
                     else:
+                        tf_dictionary[newid] = {token: tf}
+                    '''
+                    # apply the formula by the book 11.32
+                    weight = ((k1 + 1) * tf) / (tf + k1 * (((1 - b) + b * (ld / average_length_document))))
+                    idf = math.log((N) / (n))
+                    resultBM25 = (weight) * idf
+                    if newid in Bm25ScoreDictionary:
+                        Bm25ScoreDictionary[newid][token] = resultBM25
+                    else:
+                        Bm25ScoreDictionary[newid] = {token: resultBM25}
+                        '''
+                    if token in dictionary:
+
+                        #if newid not in dictionary[token]:
+                        dictionary[token].append(newid)
+                        #dictionary[token].append(newid+":"+str(tf))
+                    else:
+                        #dictionary[token] = [newid+":"+str(tf)]
                         dictionary[token] = [newid]
+
         articleCount += 1
         if articleCount % 499 == 0:
             if not os.path.exists("./disk"):
@@ -114,6 +191,12 @@ if(dictionary):
     dictionary = {}
     print(fileNameCreate)
 
+average_length_document2 = length_document2 / articleCount
+
+documentLen["N"] = articleCount
+documentLen["average_length"] = average_length_document2
+
+
 for file in fileLists:
     index = 0
     with open(file) as fin:
@@ -126,6 +209,22 @@ for file in fileLists:
 print(maxFile)
 print(max)
 print(stopArr)
+
+with open("DocTemp.txt", 'a') as fpp:
+    for key in documentLen:
+        fpp.write(str(key) + "<:::>" + str(documentLen[key]) + "\n")
+'''
+with open("BM25Score.txt", 'a') as fpp:
+    for key in Bm25ScoreDictionary:
+        fpp.write(str(key) + "<:::>" + str(Bm25ScoreDictionary[key]) + "\n")
+'''
+with open("tf.txt", 'a') as fpp:
+    for key in tf_dictionary:
+        fpp.write(str(key) + "<:::>" + str(tf_dictionary[key]) + "\n")
+
+with open("ld.txt", 'a') as fpp:
+    for key in tf_dictionary:
+        fpp.write(str(key) + "<:::>" + str(ld_dictionary[key]) + "\n")
 #merge
 mg.mergeInit(fileLists, stopArr, max)
 mg.run()
